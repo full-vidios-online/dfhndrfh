@@ -5,7 +5,7 @@ import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   try {
-    const endpoint = 'https://dfhndrfh.infinityfree.me/graphql';
+    const endpoint = 'https://www.blogverse.website/graphql';
     const graphQLClient = new GraphQLClient(endpoint);
 
     const referringURL = ctx.req.headers?.referer || null;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
       return {
         redirect: {
           permanent: false,
-          destination: `https://dfhndrfh.infinityfree.me/${encodeURI(path)}`,
+          destination: `https://www.blogverse.website/${encodeURI(path)}`,
         },
       };
     }
