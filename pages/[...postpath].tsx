@@ -5,7 +5,7 @@ import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   try {
-    const endpoint = 'https://blogverse.website/graphql';
+    const endpoint = 'https://ajkerbanglatarikh.com/graphql';
     const graphQLClient = new GraphQLClient(endpoint);
 
     const referringURL = ctx.req.headers?.referer || null;
